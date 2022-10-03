@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.Keys;
 
 import java.time.Duration;
 import java.time.LocalDate;
@@ -32,7 +33,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -48,7 +50,8 @@ public class CardTest {
         String date = dateGenerate(3);
         SelenideElement form = $x("//form");
 
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Томас Джефферсон");
         form.$("[data-test-id='phone'] input").setValue("+79876543223");
@@ -64,7 +67,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Южно-Сахалинск");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Томас Джефферсон");
         form.$("[data-test-id='phone'] input").setValue("+79876543223");
@@ -81,7 +85,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Улукуламск");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -97,7 +102,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Южно Сахалинск");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -113,7 +119,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue(" Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -129,7 +136,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Moscow");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -145,7 +153,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("80401");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -161,7 +170,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("<>");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -176,7 +186,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
         form.$("[data-test-id='agreement']").click();
@@ -190,7 +201,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue("00.00.0000");
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -206,7 +218,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue("11.05.0000");
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -223,7 +236,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -239,7 +253,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -255,7 +270,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
         form.$("[data-test-id='agreement']").click();
@@ -270,7 +286,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue(" ");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -286,7 +303,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Andy Dyfrayn");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -303,7 +321,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Иван Тарасов-Гаевский");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -320,7 +339,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("@");
         form.$("[data-test-id='phone'] input").setValue("+79998887766");
@@ -337,7 +357,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='agreement']").click();
@@ -352,7 +373,8 @@ public class CardTest {
         SelenideElement form = $x("//form");
 
         form.$("[data-test-id='city'] input").setValue("Москва");
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         form.$("[data-test-id='date'] input").setValue(date);
         form.$("[data-test-id='name'] input").setValue("Питер Паркер");
         form.$("[data-test-id='phone'] input").setValue("+7(999)8887766");
@@ -366,7 +388,8 @@ public class CardTest {
     void emptyForm() {
         SelenideElement form = $x("//form");
 
-        form.$("[data-test-id='date'] input").clear();
+//        form.$("[data-test-id='date'] input").clear();
+        $("[data-test-id='date'] input").sendKeys(Keys.chord(Keys.SHIFT, Keys.HOME), Keys.BACK_SPACE);
         $x("//button[contains(@class,'button_view_extra')]").click();
         $("[data-test-id='city'].input_invalid .input__sub").shouldBe(visible)
                 .shouldHave(exactText("Поле обязательно для заполнения"));
